@@ -1,8 +1,8 @@
-Step 1: Install Node.js
+# Step 1: Install Node.js #
 
 (Installing from the NodeSource rep)
-	$ apt-get update
-	$ apt-get upgrade
+	code($ apt-get update)
+	code($ apt-get upgrade)
 install the Node.js
 	$ apt-get install curl git gcc g++ make
 	$ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
