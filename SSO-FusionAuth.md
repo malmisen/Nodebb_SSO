@@ -1,4 +1,5 @@
 # Single Sign on Nodebb #
+!Disclaimer: Setting up NodeBB with fusionauth as the identity management system never worked. This readme file contains the steps taken during the attempt to make it work. 
 
 ## 1. Database installation for FusionAuth, postgresql (for macOS)##
 		1. Navigate to https://postgresapp.com/
