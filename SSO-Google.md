@@ -10,7 +10,7 @@ https://github.com/julianlam/nodebb-plugin-sso-google
 ## 2. Setting it up ##
  1. API Console - https://console.cloud.google.com/projectselector2/apis/dashboard?supportedpurview=project
 	- Create a New Project via the API Console
-	  Lets call this new project "nodebb"
+	- Lets call this new project "nodebb"
 	
  2. From the "Credentials" page, create a new "OAuth Client ID"
 		1. click on "+ CREATE CREDENTIALS"
