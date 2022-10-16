@@ -35,32 +35,32 @@ MongoDB is the default database for NodeBB.
 5. Then create a new NodeBB user named ‘nodebbuser’ with rights to administer the database…
 	1. db.createUser({user:"nodebbuser",pwd:"nodebb123",roles:[{role:"readWrite",db:"nodebb"},{role:"clusterMonitor",db:"admin"}]})
 Note (Might be smart to replace pwd: "admin123" and "nodebb123"  to something else)
-After that, exit the MongoDB shell.
-	quit()
-After that, run the commands below to open MongoDB config file…
-	$ sudo vim /etc/mongod.conf
+6. After that, exit the MongoDB shell.
+	1. quit()
+7. After that, run the commands below to open MongoDB config file…
+	1. $ sudo vim /etc/mongod.conf
 	#security
 	security:
 	authorization:enabled
 
-Step 4: Install Nginx
-	$ sudo apt-get install nginx
-	$ sudo systemctl start nginx.service
-	$ sudo systemctl enable nginx.service
+## Step 4: Install Nginx ##
+	1. $ sudo apt-get install nginx
+	2. $ sudo systemctl start nginx.service
+	3. $ sudo systemctl enable nginx.service
 
-Step 5: Installing NodeBB
-Go to the newly created directory by executing:
-	$ cd /var/www
-Clone NodeBB in this directory 
-	$ git clone -b v2.x https://github.com/NodeBB/NodeBB.git nodebb
-Head into NodeBB dir
-	$ cd nodebb
-Run the setup
-	$ sudo ./nodebb setup
-	connect MongoDB during setup with the nodebb database you created in step 3
-	create an admin
-	- admin
-	- <some@email.com>
-	- admin123
+## Step 5: Installing NodeBB ##
+1. Go to the newly created directory by executing:
+	1. $ cd /var/www
+2. Clone NodeBB in this directory 
+	1. $ git clone -b v2.x https://github.com/NodeBB/NodeBB.git nodebb
+3. Head into NodeBB dir
+	1. $ cd nodebb
+4. Run the setup
+	1. $ sudo ./nodebb setup
+	2. connect MongoDB during setup with the nodebb database you created in step 3
+	3. create an admin
+		- admin
+		- <some@email.com>
+		- admin123
 
 You should now be able to access your NodeBB service at http://localhost:4567
