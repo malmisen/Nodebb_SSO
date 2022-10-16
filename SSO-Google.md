@@ -37,7 +37,7 @@ https://github.com/julianlam/nodebb-plugin-sso-google
 		clientId: <clientId>
 		clientSecret: <clientSecret>
 
-3. Configure plugin
+## 3. Configure plugin ##
 	1. install plugin
 	2. activate plugin
 	3. rebuild - restart nodebb
@@ -48,7 +48,7 @@ https://github.com/julianlam/nodebb-plugin-sso-google
 		./nodebb build
 		./nodebb start
 
-  ## NOTE! NodeBB does not appreciate special characters! Do not use any when creating your google account. ##
+  #### NOTE! NodeBB does not appreciate special characters! Do not use any when creating your google account. ####
 	1. Create a google account
 		- firstname
 		- lastname
