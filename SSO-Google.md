@@ -18,13 +18,13 @@ https://github.com/julianlam/nodebb-plugin-sso-google
 	3. Complete the OAuth consent setup (I picked External user type)
 	4. Fill in App information
 		- Nodebb
-		- <email>
+		- email
 		- App logo whatever
 		- application home page = http://localhost:4567
-		- Developer contact information = <email>
+		- Developer contact information = email
 		- I leave scope, rate limits and such things as default since this is only for illustration purposes
 		- Add a user under "Test users"
-			-  <email>
+			-  email
 		
 	5. Click on "+ CREATE CREDENTIALS ONCE MORE
 		- Application Type - Web application
@@ -32,8 +32,8 @@ https://github.com/julianlam/nodebb-plugin-sso-google
 		- Authorized JavaScript origins - http://localhost:4567/
 		- Authorized redirect URIs - http://localhost:4567/auth/google/callback
 		- Save the clientId and clientSecret, you will need them when configuring the plugin on NodeBB
-			- clientId: <clientId>
-			- clientSecret: <clientSecret>
+			- clientId: clientId
+			- clientSecret: clientSecret
 
 ## 3. Configure plugin ##
 	1. install plugin
@@ -50,8 +50,8 @@ https://github.com/julianlam/nodebb-plugin-sso-google
 	1. Create a google account
 		- firstname
 		- lastname
-		- <accName>
-		- <password>
+		- accName
+		- password
 
 You should now be able to register on NodeBB with your google account.
 Then you can login with your newly registered account.
